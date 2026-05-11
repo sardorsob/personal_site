@@ -41,11 +41,17 @@ const Contact = () => {
           <h3>Let's Connect</h3>
           <p>I'm always interested in new opportunities, collaborations, and interesting projects. Feel free to reach out!</p>
           <div className="social-links">
-            <a href="https://github.com/SatrunsDream" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/sardorsob" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
             <a href="https://www.linkedin.com/in/sardor-sobirov" target="_blank" rel="noopener noreferrer">
               LinkedIn
+            </a>
+            <a href="https://x.com/sardor_sob" target="_blank" rel="noopener noreferrer">
+              X
+            </a>
+            <a href="https://www.kaggle.com/sardorbsobirov" target="_blank" rel="noopener noreferrer">
+              Kaggle
             </a>
             <a href="mailto:ssobirov@ucsd.edu">
               Email
