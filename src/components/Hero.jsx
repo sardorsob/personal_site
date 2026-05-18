@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLocation, useNavigate } from 'react-router-dom';
-import lebronImage from '../assets/images/lebron.jpg';
+import lebronImage from '../assets/images/lebron.png';
 
 const Hero = () => {
   const [showResumeModal, setShowResumeModal] = useState(false);
