@@ -17,16 +17,235 @@ body {
   min-height: 100vh;
 }
 
-/* Navigation */
-.navigation {
+/* ─── Sidebar layout ─────────────────────────────── */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-main {
+  margin-left: 300px;
+  flex: 1;
+  min-height: 100vh;
+}
+
+.sidebar {
   position: fixed;
-  top: 0;
   left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background: white;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(59, 130, 246, 0.1);
+  overflow-y: auto;
+}
+
+.sidebar-top-controls {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.sidebar-profile {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.sidebar-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #3b82f6;
+  box-shadow: 0 4px 16px rgba(59,130,246,0.2);
+}
+
+.sidebar-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+}
+
+.sidebar-title {
+  font-size: 0.8rem;
+  color: #718096;
+  line-height: 1.5;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+}
+
+.sidebar-link {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4a5568;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.sidebar-link:hover {
+  color: #3b82f6;
+  background: rgba(59,130,246,0.08);
+}
+
+.sidebar-link-active {
+  color: #3b82f6;
+  background: rgba(59,130,246,0.1);
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.sidebar-social {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.sidebar-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #718096;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.sidebar-icon-btn:hover {
+  color: #3b82f6;
+  background: rgba(59,130,246,0.08);
+}
+
+.sidebar-email {
+  display: block;
+  font-size: 0.78rem;
+  color: #718096;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  word-break: break-all;
+  transition: color 0.15s ease;
+}
+
+.sidebar-email:hover {
+  color: #3b82f6;
+}
+
+.sidebar-theme-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #718096;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s ease;
+}
+
+.sidebar-theme-btn:hover {
+  color: #3b82f6;
+}
+
+/* Mobile top bar */
+.mobile-topbar {
+  display: none;
+}
+
+.sidebar-overlay {
+  display: none;
+}
+
+/* ─── Intro section (replaces Hero) ─────────────── */
+.intro {
+  padding: 4rem 3.5rem 3rem;
+  max-width: 860px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.intro-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e40af;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+.intro-body p {
+  font-size: 1.05rem;
+  color: #4a5568;
+  margin-bottom: 1.2rem;
+  line-height: 1.75;
+  max-width: 640px;
+}
+
+.intro-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 2rem;
+}
+
+.intro-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 1rem;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 6px;
+  background: white;
+  color: #2d3748;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.intro-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.intro-btn-filled {
+  background: #1e40af;
+  border-color: #1e40af;
+  color: white;
+}
+
+.intro-btn-filled:hover {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+/* Navigation (legacy — sidebar replaces this) */
+.navigation {
+  display: none;
 }
 
 .nav-container {
@@ -118,9 +337,9 @@ section {
 }
 
 section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
   color: #1e40af;
   position: relative;
 }
@@ -129,9 +348,8 @@ section h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
+  left: 0;
+  width: 48px;
   height: 3px;
   background: linear-gradient(to right, #3b82f6, #1e40af);
   border-radius: 2px;
@@ -983,37 +1201,75 @@ section h2::after {
     align-items: center;
   }
 
-  /* Mobile navigation */
-  .hamburger {
+  /* Mobile sidebar */
+  .mobile-topbar {
     display: flex;
-  }
-
-  .nav-menu {
     position: fixed;
-    top: 100%;
+    top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    padding: 2rem;
-    gap: 1rem;
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
+    height: 58px;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    z-index: 1001;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   }
 
-  .nav-menu.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
+  .mobile-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3b82f6;
   }
 
-  .nav-link {
-    text-align: center;
-    padding: 1rem;
-    border-radius: 8px;
+  .mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .sidebar {
+    top: 58px;
+    width: 300px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: none;
+  }
+
+  .sidebar.sidebar-open {
+    transform: translateX(0);
+    box-shadow: 4px 0 20px rgba(0,0,0,0.1);
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 999;
+  }
+
+  .sidebar-theme-btn {
+    display: none;
+  }
+
+  .app-main {
+    margin-left: 0;
+    padding-top: 58px;
+  }
+
+  .intro {
+    padding: 2.5rem 1.5rem 2rem;
+  }
+
+  .intro-heading {
+    font-size: 2rem;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
 
@@ -1023,22 +1279,101 @@ section h2::after {
   color: #e5e5e5;
 }
 
-.dark-mode .navigation {
-  background: rgba(26, 26, 26, 0.95);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+/* Sidebar dark mode */
+.dark-mode .sidebar {
+  background: #1e1e1e;
+  border-right-color: #333;
 }
 
-.dark-mode .nav-link {
+.dark-mode .sidebar-name {
+  color: #60a5fa;
+}
+
+.dark-mode .sidebar-title {
+  color: #b0b0b0;
+}
+
+.dark-mode .sidebar-link {
+  color: #b0b0b0;
+}
+
+.dark-mode .sidebar-link:hover {
+  color: #3b82f6;
+  background: rgba(59,130,246,0.12);
+}
+
+.dark-mode .sidebar-link-active {
+  color: #3b82f6;
+  background: rgba(59,130,246,0.12);
+}
+
+.dark-mode .sidebar-bottom {
+  border-top-color: #333;
+}
+
+.dark-mode .sidebar-icon-btn {
+  color: #718096;
+}
+
+.dark-mode .sidebar-icon-btn:hover {
+  color: #3b82f6;
+  background: rgba(59,130,246,0.12);
+}
+
+.dark-mode .sidebar-email {
+  color: #718096;
+}
+
+.dark-mode .sidebar-theme-btn {
+  color: #718096;
+}
+
+.dark-mode .mobile-topbar {
+  background: #1e1e1e;
+  border-bottom-color: #333;
+}
+
+.dark-mode .mobile-logo {
+  color: #3b82f6;
+}
+
+/* Intro dark mode */
+.dark-mode .intro {
+  border-bottom-color: #333;
+}
+
+.dark-mode .intro-heading {
+  color: #60a5fa;
+}
+
+.dark-mode .intro-body p {
+  color: #b0b0b0;
+}
+
+.dark-mode .intro-btn {
+  background: #2d2d2d;
+  border-color: #404040;
   color: #e5e5e5;
 }
 
-.dark-mode .nav-link:hover {
+.dark-mode .intro-btn:hover {
+  border-color: #3b82f6;
   color: #3b82f6;
-  background: rgba(59, 130, 246, 0.2);
+}
+
+.dark-mode .intro-btn-filled {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+.dark-mode .intro-btn-filled:hover {
+  background: #1e40af;
+  border-color: #1e40af;
 }
 
 .dark-mode .theme-toggle {
-  color: #e5e5e5;
+  color: #b0b0b0;
 }
 
 .dark-mode .theme-toggle:hover {

@@ -18,7 +18,7 @@ const Projects = () => {
   const [selectedFilter, setSelectedFilter] = useState(null);
 
   useEffect(() => {
-    setProjects(projectsData.projects);
+    setProjects(projectsData.projects.filter(p => !p.hidden));
   }, []);
 
   const filteredProjects = selectedFilter

@@ -4,7 +4,11 @@
       "Bash(npm install *)",
       "Bash(npm start *)",
       "Read(//c/Users/sardo/AppData/Local/Temp/**)",
-      "Bash(npx react-scripts *)"
+      "Bash(npx react-scripts *)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(taskkill /PID 30656 /F)",
+      "PowerShell(Stop-Process -Id 30656 -Force)"
     ]
   }
 }

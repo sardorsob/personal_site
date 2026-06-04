@@ -6,7 +6,19 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Data Analyst Intern",
+      title: "Research and Development Capstone",
+      company: "Cotality + HDSI",
+      period: "Sep 2025 - Mar 2026",
+      location: "San Diego, CA",
+      bullets: [
+        "Built a React/TypeScript geospatial dashboard using MapLibre GL, D3.js, Vite, and Tailwind CSS for Cotality's data science team to compare county-level property-characteristic distributions across California.",
+        "Used BigQuery GIS, SQL, H3 spatial indexing, spatial joins, buffers, and centroid-based geometry processing to prepare property and land-cover data for county-level anomaly detection.",
+        "Applied empirical Bayes shrinkage, Jensen-Shannon divergence, Moran's I, and classifier two-sample testing to help distinguish true property-data anomalies from sparse-data noise and county-level naming inconsistencies.",
+        "Delivered a dashboard MVP that helped Cotality data scientists investigate property-data discrepancies more efficiently and supported their internal workflow for wildfire risk and property intelligence review."
+      ]
+    },
+    {
+      title: "Data Engineer Intern",
       company: "Apptics.ai",
       period: "June 2025 - Sep 2025",
       location: "Walnut Creek, CA",
@@ -17,7 +29,7 @@ const Experience = () => {
       ]
     },
     {
-      title: "Product Manager Intern - Innovating for National Security (i4NS)",
+      title: "Research and Development Intern",
       company: "United States Department of Defense (DoD)",
       period: "Sep 2024 - Dec 2024",
       location: "La Jolla, CA",
