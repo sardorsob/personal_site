@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Awards from './components/Awards';
 import Contact from './components/Contact';
+import PaperView from './components/PaperView';
 import './styles/global.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/projects"   element={<Projects />}   />
           <Route path="/awards"     element={<Awards />}     />
           <Route path="/contact"    element={<Contact />}    />
+          <Route path="/papers/:slug" element={<PaperView />} />
         </Routes>
       </main>
     </div>

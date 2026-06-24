@@ -1119,6 +1119,85 @@ section h2::after {
   text-decoration: underline;
 }
 
+/* Paper view page */
+.paper-view {
+  padding: 2rem 3rem;
+  max-width: none;
+  height: calc(100vh - 0px);
+  display: flex;
+  flex-direction: column;
+}
+
+.paper-header {
+  margin-bottom: 1.5rem;
+}
+
+.paper-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.paper-back-btn {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-family: inherit;
+  transition: color 0.15s ease;
+}
+
+.paper-back-btn:hover {
+  color: #1e40af;
+}
+
+.paper-meta {
+  margin-top: 0.5rem;
+}
+
+.paper-embed {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.paper-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.paper-not-found {
+  padding: 4rem 3rem;
+}
+
+.paper-not-found h2 {
+  margin-bottom: 1rem;
+}
+
+.paper-not-found p {
+  color: #718096;
+  margin-bottom: 2rem;
+}
+
+/* Dark mode paper view */
+.dark-mode .paper-embed {
+  border-color: #404040;
+}
+
+.dark-mode .paper-back-btn {
+  color: #60a5fa;
+}
+
+.dark-mode .paper-back-btn:hover {
+  color: #3b82f6;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   section {

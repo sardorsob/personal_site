@@ -24,6 +24,7 @@
       "year": "2026",
       "image": "/src/assets/images/geocrop-modeling.png",
       "description": "Built an end-to-end geospatial pipeline analyzing 48M+ pixels across 13 U.S. Corn Belt states using USDA CDL, MODIS NDVI, and NASA SMAP L4 soil moisture. Fit Hilbert Space Gaussian Process (HSGP) models for uncertainty-aware crop phenology curves (RMSE 0.019–0.023). Classified 2.08M pixels into rotation regimes using four sequence metrics and Bayesian Dirichlet-Multinomial posteriors. Detected soil moisture anomalies during the 2019 Midwest Flood and 2022 Plains Drought via a Normal-Inverse-Gamma conjugate framework with Student-t posterior predictives. Trained a LightGBM crop-type classifier on 38 multi-source features achieving 79.2% accuracy across 4 classes, with SHAP-based interpretability and ablation analysis quantifying each data source's marginal contribution.",
+      "slug": "geocrop-agricultural-resilience",
       "pdf": "/NAFSI_Predictive_Modeling_for_Agricultural_Resilience.pdf",
       "link": "https://geo-crop-spatiotemporal-modeling.vercel.app",
       "tags": [
@@ -42,6 +43,7 @@
       "year": "2026",
       "image": "/src/assets/images/wildfire-intel.png",
       "description": "Analyzed over 2.4 million property records across 221k H3 spatial cells and 58 California counties to investigate data quality issues in wildfire risk datasets derived from the National Structure Inventory. Developed a spatial anomaly detection framework combining Empirical Bayes shrinkage, neighbor-pooled conditional probability models, and divergence metrics (KL, L1, Jensen–Shannon) to identify inconsistencies in county-level building attribute distributions. Built an interactive geospatial dashboard to visualize divergence patterns, spatial relationships, and reporting anomalies across landcover categories.",
+      "slug": "wildfire-property-intelligence",
       "pdf": "/Wildfire_Property_Intelligence.pdf",
       "link": "https://wildfire-property-intelligence.vercel.app",
       "tags": [
@@ -59,6 +61,7 @@
       "year": "2026",
       "image": "/src/assets/images/eeg-bayesian.png",
       "description": "Applied Bayesian Online Change Point Detection (BOCPD) to multi-channel EEG recordings from the THINGS-EEG dataset to study nonstationarity in neural signals. Analyzed temporal variance structure, spectral bandpower, and trial-level dynamics to detect shifts in neural activity associated with cognitive and sensory processing. Built an interactive research visualization using React, TypeScript, D3, and Recharts to demonstrate run-length inference, neural variance dynamics, and change-point behavior through scroll-driven scientific storytelling.",
+      "slug": "bayesian-eeg-change-point",
       "pdf": "/BAYESIAN_NEURAL_SHIFTS.pdf",
       "link": "https://bayesian-detection-for-eeg.vercel.app",
       "tags": [
@@ -76,6 +79,7 @@
       "year": "2025",
       "image": "/src/assets/images/hurricane-kalman.png",
       "description": "Developed a probabilistic hurricane tracking system using Kalman filtering to model storm position and velocity under observational uncertainty. Leveraged NOAA IBTrACS data to estimate storm dynamics, perform short- and multi-step forecasts, and evaluate forecast error growth over time. Compared a baseline constant-noise Kalman filter against a feature-adaptive variant, analyzing error distributions, uncertainty calibration, and inherent predictability limits in hurricane motion.",
+      "slug": "hurricane-track-forecasting",
       "pdf": "/Sequential_Bayesian_Inference_Applied_to_Hurricane_Tracking.pdf",
       "link": "https://hurricanepaths.streamlit.app",
       "tags": ["Bayesian Inference", "Kalman Filter", "Time Series", "Probabilistic Modeling", "Geospatial Analysis", "Climate Data"]
@@ -93,6 +97,7 @@
       "year": "2024",
       "image": "/src/assets/images/hma.png",
       "description": "Developed a large-scale housing price prediction system using a dataset of over 2.2 million U.S. property listings enriched with geospatial and socioeconomic features such as population density, crime statistics, tax rates, and geographic coordinates. Built a full data pipeline including cleaning, hierarchical imputation, and feature engineering with ZIP-level aggregates and spatial distance features computed using the Haversine formula. Trained and evaluated multiple regression models including Linear Regression, Random Forest, XGBoost, and LightGBM to predict log-transformed housing prices. The final optimized LightGBM model achieved an RMSE of approximately 0.4",
+      "slug": "housing-price-prediction",
       "pdf": "/House_Price_Project.pdf",
       "tags": ["Regression", "Housing Market", "Geospatial Analysis", "FastAPI", "Data Engineering"]
     },
