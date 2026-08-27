@@ -93,7 +93,7 @@ const Navigation = () => {
         <div className="sidebar-profile" onClick={() => goTo('/')} style={{ cursor: 'pointer' }}>
           <img src={profileImage} alt="Sardor Sobirov" className="sidebar-photo" />
           <h2 className="sidebar-name">Sardor Sobirov</h2>
-          <p className="sidebar-title">Data Science @ UCSD</p>
+          <p className="sidebar-title">Data Scientist | GIS<br />UCSD graduate</p>
         </div>
 
         <nav className="sidebar-nav">

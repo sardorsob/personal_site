@@ -54,10 +54,10 @@
     "semantic_hash": "a760a4c5eefdb29028f2b24f6bbf6ce5"
   },
   "src/components/Navigation.jsx": {
-    "mtime": 1784828156.2632802,
-    "seen": 1787790562.060679,
-    "ast_hash": "e1bd3dd88f787d0192daa996eba57160",
-    "semantic_hash": "e1bd3dd88f787d0192daa996eba57160"
+    "mtime": 1787792916.7876658,
+    "seen": 1787793024.573372,
+    "ast_hash": "5f36b3e8f2e88e2b0219455daef27626",
+    "semantic_hash": ""
   },
   "src/components/PaperView.jsx": {
     "mtime": 1784828156.263332,
