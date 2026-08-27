@@ -42,27 +42,42 @@ test('includes the completed Pacific Climate Evidence Atlas project', () => {
 
   expect(project).toEqual(expect.objectContaining({
     year: '2026',
-    screenshot: '/pacific-climate-evidence-atlas.png',
     link: 'https://pacific-climate-gap-atlas-app.vercel.app/?view=overview',
     github: 'https://github.com/sardorsob/Pacific-Climate-Gap-Atlas'
   }));
+  expect(project).not.toHaveProperty('screenshot');
 });
 
-test('renders a project screenshot and both external project links', () => {
+test('uses concise active project titles and hides retired projects', () => {
+  const visibleTitles = projectsData.projects
+    .filter(({ hidden }) => !hidden)
+    .map(({ title }) => title);
+
+  expect(visibleTitles).toEqual([
+    'Pacific Climate Evidence Atlas',
+    'Uncertain Transit Access',
+    'GeoCrop Spatiotemporal Modeling',
+    'Wildfire Property Intelligence',
+    'Neural Regime Shift',
+    'Probabilistic Hurricane Track Forecasting'
+  ]);
+  expect(projectsData.projects.every(
+    (project) => !('screenshot' in project) && !('image' in project)
+  )).toBe(true);
+});
+
+test('renders both Pacific project links without an image', () => {
   const project = {
     title: 'Pacific Climate Evidence Atlas',
     description: 'A concise project description.',
     tags: ['Climate Data'],
-    screenshot: '/pacific-climate-evidence-atlas.png',
     link: 'https://pacific-climate-gap-atlas-app.vercel.app/?view=overview',
     github: 'https://github.com/sardorsob/Pacific-Climate-Gap-Atlas'
   };
 
   const page = render(<ProjectCard project={project} />);
 
-  expect(page.querySelector('img')?.getAttribute('alt')).toBe(
-    'Pacific Climate Evidence Atlas application screenshot'
-  );
+  expect(page.querySelector('img')).toBeNull();
   expect(page.querySelector(`a[href="${project.link}"]`)).not.toBeNull();
   expect(page.querySelector(`a[href="${project.github}"]`)).not.toBeNull();
 });

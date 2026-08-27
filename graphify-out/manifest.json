@@ -78,9 +78,9 @@
     "semantic_hash": "a604f777a2e9ffed4d001f9e5abd1df5"
   },
   "src/data/projects.json": {
-    "mtime": 1787791492.2493143,
-    "seen": 1787791789.6619468,
-    "ast_hash": "cfd77b55aea143cd75fd4e5b97482b09",
+    "mtime": 1787793499.3687592,
+    "seen": 1787793550.254237,
+    "ast_hash": "d6ff22a20642c02f135420e22e719d78",
     "semantic_hash": ""
   },
   "src/index.js": {
@@ -102,9 +102,9 @@
     "semantic_hash": "6411d2fbb5f0e00aaff0ca0ded84e0b6"
   },
   "src/portfolio-content.test.jsx": {
-    "mtime": 1787791491.9621003,
-    "seen": 1787791789.661948,
-    "ast_hash": "b3ad7374f769ea494544773103e48b57",
+    "mtime": 1787793499.4558969,
+    "seen": 1787793550.254238,
+    "ast_hash": "4533faff12ee0893caa7fa2eb778da31",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -165,12 +165,6 @@
     "mtime": 1784828156.2408602,
     "seen": 1787791789.661953,
     "ast_hash": "f39e592b4381d157b9c8514b9eb5552f",
-    "semantic_hash": ""
-  },
-  "public/pacific-climate-evidence-atlas.png": {
-    "mtime": 1787791500.6412988,
-    "seen": 1787791789.6619542,
-    "ast_hash": "b87ae7d8b83087cb2107574415e19c48",
     "semantic_hash": ""
   },
   "src/assets/images/ckd.png": {
