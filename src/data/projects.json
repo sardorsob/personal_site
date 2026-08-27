@@ -2,6 +2,24 @@
   
   "projects": [
     {
+      "title": "Pacific Climate Evidence Atlas",
+      "year": "2026",
+      "screenshot": "/pacific-climate-evidence-atlas.png",
+      "description": "An interactive climate-evidence atlas comparing changes in drinking-water access and renewable-energy share across 22 Pacific places. The project also audits where official records are present or absent, allowing readers to inspect each comparison, its sources, and its limitations.",
+      "link": "https://pacific-climate-gap-atlas-app.vercel.app/?view=overview",
+      "github": "https://github.com/sardorsob/Pacific-Climate-Gap-Atlas",
+      "tags": [
+        "Climate Data",
+        "Geospatial Analysis",
+        "Data Visualization",
+        "React",
+        "TypeScript",
+        "MapLibre",
+        "Python",
+        "Statistical Analysis"
+      ]
+    },
+    {
       "title": "Bayesian Transit Equity: Spatial Accessibility Modeling",
       "year": "2026",
       "image": "/src/assets/images/bayes-transit-equity.png",

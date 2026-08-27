@@ -6,6 +6,17 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "Geohazard Data Science Intern",
+      company: "U.S. Department of the Interior — National Park Service",
+      period: "Sep 2026 - Jun 2027",
+      location: "Mount Rainier National Park, Longmire, WA",
+      bullets: [
+        "Support Mount Rainier National Park's Imminent Threats Program through an AmeriCorps individual placement administered by Conservation Legacy Stewards Individual Placements.",
+        "Analyze and map river and glacier systems using GIS, remote sensing, LiDAR, NAIP imagery, Sentinel data, Structure-from-Motion products, and field validation to support geohazard assessment and natural-resource management.",
+        "Support Nisqually River seismic arrays, RFID/BLE sediment-tracer research, and hydrologic monitoring while organizing and quality-checking environmental sensor data for statistical analysis, discharge rating curves, maps, and technical summaries."
+      ]
+    },
+    {
       title: "Research and Development Capstone",
       company: "Cotality + HDSI",
       period: "Sep 2025 - Mar 2026",

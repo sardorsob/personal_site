@@ -1,0 +1,186 @@
+{
+  "communities": {
+    "0": [
+      "src_app",
+      "src_app_app",
+      "src_components_awards",
+      "src_components_awards_awards",
+      "src_components_contact",
+      "src_components_contact_contact",
+      "src_components_experience",
+      "src_components_experience_experience",
+      "src_components_hero",
+      "src_components_hero_hero",
+      "src_components_navigation",
+      "src_components_navigation_navigation",
+      "src_components_paperview",
+      "src_components_paperview_paperview",
+      "src_index",
+      "src_index_root"
+    ],
+    "1": [
+      "d3",
+      "framer_motion",
+      "package_dependencies",
+      "package_dependencies_d3",
+      "package_dependencies_framer_motion",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_refresh",
+      "package_dependencies_react_router_dom",
+      "package_dependencies_react_scripts",
+      "react",
+      "react_dom",
+      "react_refresh",
+      "react_router_dom",
+      "react_scripts"
+    ],
+    "2": [
+      "package",
+      "package_author",
+      "package_bugs",
+      "package_bugs_url",
+      "package_description",
+      "package_keywords",
+      "package_license",
+      "package_name",
+      "package_repository",
+      "package_repository_type",
+      "package_repository_url",
+      "package_version"
+    ],
+    "3": [
+      "package_browserslist",
+      "package_browserslist_development",
+      "package_browserslist_production",
+      "ref_0_2",
+      "ref_last_1_chrome_version",
+      "ref_last_1_firefox_version",
+      "ref_last_1_safari_version",
+      "ref_not_dead",
+      "ref_not_op_mini_all"
+    ],
+    "4": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_eject",
+      "package_scripts_start",
+      "package_scripts_test"
+    ],
+    "5": [
+      "src_components_projectcard",
+      "src_components_projectcard_projectcard",
+      "src_components_projects",
+      "src_components_projects_filtercategories",
+      "src_components_projects_projects"
+    ],
+    "6": [
+      "src_components_blog",
+      "src_components_blog_blog"
+    ],
+    "7": [
+      "src_components_d3piechart",
+      "src_components_d3piechart_d3piechart"
+    ],
+    "8": [
+      "src_styles_tailwind_config",
+      "tailwindcss"
+    ],
+    "9": [
+      "vercel",
+      "vercel_rewrites"
+    ]
+  },
+  "cohesion": {
+    "0": 0.18333333333333332,
+    "1": 0.13333333333333333,
+    "2": 0.16666666666666666,
+    "3": 0.2222222222222222,
+    "4": 0.4,
+    "5": 0.5,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "package_browserslist_development",
+      "label": "development",
+      "degree": 4
+    },
+    {
+      "id": "package_browserslist_production",
+      "label": "production",
+      "degree": 4
+    },
+    {
+      "id": "package_repository",
+      "label": "repository",
+      "degree": 3
+    },
+    {
+      "id": "package_browserslist",
+      "label": "browserslist",
+      "degree": 3
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_awards_awards",
+      "label": "Awards()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_contact_contact",
+      "label": "Contact()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_experience_experience",
+      "label": "Experience()",
+      "degree": 2
+    },
+    {
+      "id": "src_components_hero_hero",
+      "label": "Hero()",
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `Community 1` to `Community 2`?",
+      "why": "High betweenness centrality (0.191) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `browserslist` connect `Community 3` to `Community 2`?",
+      "why": "High betweenness centrality (0.116) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `scripts` connect `Community 4` to `Community 2`?",
+      "why": "High betweenness centrality (0.064) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `root`, `d3`, `framer-motion` to the rest of the system?",
+      "why": "29 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

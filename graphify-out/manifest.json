@@ -1,0 +1,236 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1784828156.2017066,
+    "seen": 1787790562.060671,
+    "ast_hash": "8b241d9e5d53520d50090ce77a33dc4a",
+    "semantic_hash": "8b241d9e5d53520d50090ce77a33dc4a"
+  },
+  "package.json": {
+    "mtime": 1784828156.2032568,
+    "seen": 1787790562.060674,
+    "ast_hash": "6d528d3da557c2f8f84901a08347f22b",
+    "semantic_hash": "6d528d3da557c2f8f84901a08347f22b"
+  },
+  "src/App.jsx": {
+    "mtime": 1784828156.24104,
+    "seen": 1787790562.0606751,
+    "ast_hash": "1a7f34722c434145ee119e8efb86ab8a",
+    "semantic_hash": "1a7f34722c434145ee119e8efb86ab8a"
+  },
+  "src/components/Awards.jsx": {
+    "mtime": 1784828156.2605052,
+    "seen": 1787790562.060676,
+    "ast_hash": "87de8874e4bf79253d7b37c3cd252a39",
+    "semantic_hash": "87de8874e4bf79253d7b37c3cd252a39"
+  },
+  "src/components/Blog.jsx": {
+    "mtime": 1784828156.261812,
+    "seen": 1787790562.060676,
+    "ast_hash": "73afc51473ee3ae885975e7183561ee3",
+    "semantic_hash": "73afc51473ee3ae885975e7183561ee3"
+  },
+  "src/components/Contact.jsx": {
+    "mtime": 1784828156.261875,
+    "seen": 1787790562.060677,
+    "ast_hash": "6fd352135daaf91dcc2f6a0afa324ffe",
+    "semantic_hash": "6fd352135daaf91dcc2f6a0afa324ffe"
+  },
+  "src/components/D3PieChart.jsx": {
+    "mtime": 1784828156.2628462,
+    "seen": 1787790562.060677,
+    "ast_hash": "f6ce00b20dcf31f9d24d815520388a31",
+    "semantic_hash": "f6ce00b20dcf31f9d24d815520388a31"
+  },
+  "src/components/Experience.jsx": {
+    "mtime": 1787791492.146933,
+    "seen": 1787791789.661943,
+    "ast_hash": "85b49375b78aed7bdf23c4c83c0c4c61",
+    "semantic_hash": ""
+  },
+  "src/components/Hero.jsx": {
+    "mtime": 1784828156.2631598,
+    "seen": 1787790562.060678,
+    "ast_hash": "a760a4c5eefdb29028f2b24f6bbf6ce5",
+    "semantic_hash": "a760a4c5eefdb29028f2b24f6bbf6ce5"
+  },
+  "src/components/Navigation.jsx": {
+    "mtime": 1784828156.2632802,
+    "seen": 1787790562.060679,
+    "ast_hash": "e1bd3dd88f787d0192daa996eba57160",
+    "semantic_hash": "e1bd3dd88f787d0192daa996eba57160"
+  },
+  "src/components/PaperView.jsx": {
+    "mtime": 1784828156.263332,
+    "seen": 1787790562.060679,
+    "ast_hash": "928a20cd772c3015f8b4e5f125281c98",
+    "semantic_hash": "928a20cd772c3015f8b4e5f125281c98"
+  },
+  "src/components/ProjectCard.jsx": {
+    "mtime": 1787791492.052284,
+    "seen": 1787791789.661945,
+    "ast_hash": "da2b4207dbbeb648602d6edc2267d09f",
+    "semantic_hash": ""
+  },
+  "src/components/Projects.jsx": {
+    "mtime": 1784828156.2634556,
+    "seen": 1787790562.06068,
+    "ast_hash": "a604f777a2e9ffed4d001f9e5abd1df5",
+    "semantic_hash": "a604f777a2e9ffed4d001f9e5abd1df5"
+  },
+  "src/data/projects.json": {
+    "mtime": 1787791492.2493143,
+    "seen": 1787791789.6619468,
+    "ast_hash": "cfd77b55aea143cd75fd4e5b97482b09",
+    "semantic_hash": ""
+  },
+  "src/index.js": {
+    "mtime": 1784828156.2636838,
+    "seen": 1787790562.0606809,
+    "ast_hash": "3cd987f1ae183f91fd93e5d37d37f72f",
+    "semantic_hash": "3cd987f1ae183f91fd93e5d37d37f72f"
+  },
+  "src/styles/tailwind.config.js": {
+    "mtime": 1784828156.263851,
+    "seen": 1787790562.060682,
+    "ast_hash": "88ce4507a7752034e65e9ceaa831ef19",
+    "semantic_hash": "88ce4507a7752034e65e9ceaa831ef19"
+  },
+  "vercel.json": {
+    "mtime": 1784828156.2639,
+    "seen": 1787790562.060682,
+    "ast_hash": "6411d2fbb5f0e00aaff0ca0ded84e0b6",
+    "semantic_hash": "6411d2fbb5f0e00aaff0ca0ded84e0b6"
+  },
+  "src/portfolio-content.test.jsx": {
+    "mtime": 1787791491.9621003,
+    "seen": 1787791789.661948,
+    "ast_hash": "b3ad7374f769ea494544773103e48b57",
+    "semantic_hash": ""
+  },
+  ".serena/project.yml": {
+    "mtime": 1787790513.6703868,
+    "seen": 1787791789.661949,
+    "ast_hash": "413984225a4fd43615844355c2f2cfbd",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1787790567.8034382,
+    "seen": 1787791789.6619499,
+    "ast_hash": "6a47d64fcc136324ca395065a707ef76",
+    "semantic_hash": ""
+  },
+  "ARCHITECTURE.md": {
+    "mtime": 1784828156.2019007,
+    "seen": 1787791789.6619499,
+    "ast_hash": "8b85d1a15bf37882c3b0c1807a8cfd8f",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784828156.2019453,
+    "seen": 1787791789.661951,
+    "ast_hash": "68b329da9893e34099c7d8ad5cb9c940",
+    "semantic_hash": ""
+  },
+  "public/index.html": {
+    "mtime": 1784828156.240963,
+    "seen": 1787791789.661951,
+    "ast_hash": "14be7525f09e743278dadeb92ae8ffe2",
+    "semantic_hash": ""
+  },
+  "public/BAYESIAN_NEURAL_SHIFTS.pdf": {
+    "mtime": 1784828156.2104158,
+    "seen": 1787791789.661952,
+    "ast_hash": "a192eade3d440d70874b7b64be82408b",
+    "semantic_hash": ""
+  },
+  "public/House_Price_Project.pdf": {
+    "mtime": 1784828156.2152348,
+    "seen": 1787791789.661952,
+    "ast_hash": "7b03acd1605d4036af9f2a2efd6893fb",
+    "semantic_hash": ""
+  },
+  "public/NAFSI_Predictive_Modeling_for_Agricultural_Resilience.pdf": {
+    "mtime": 1784828156.2302797,
+    "seen": 1787791789.661952,
+    "ast_hash": "129e969aa5bca1f34cff1645be1c13ed",
+    "semantic_hash": ""
+  },
+  "public/Sardor_DS_Resume.pdf": {
+    "mtime": 1784828156.230959,
+    "seen": 1787791789.661953,
+    "ast_hash": "0f484d2ca412711cce1e2ae46805690a",
+    "semantic_hash": ""
+  },
+  "public/Sequential_Bayesian_Inference_Applied_to_Hurricane_Tracking.pdf": {
+    "mtime": 1784828156.2346232,
+    "seen": 1787791789.661953,
+    "ast_hash": "cbe8cc87005780de53dc8f899a0e5236",
+    "semantic_hash": ""
+  },
+  "public/Wildfire_Property_Intelligence.pdf": {
+    "mtime": 1784828156.2408602,
+    "seen": 1787791789.661953,
+    "ast_hash": "f39e592b4381d157b9c8514b9eb5552f",
+    "semantic_hash": ""
+  },
+  "public/pacific-climate-evidence-atlas.png": {
+    "mtime": 1787791500.6412988,
+    "seen": 1787791789.6619542,
+    "ast_hash": "b87ae7d8b83087cb2107574415e19c48",
+    "semantic_hash": ""
+  },
+  "src/assets/images/ckd.png": {
+    "mtime": 1784828156.2455814,
+    "seen": 1787791789.6619542,
+    "ast_hash": "ea75b9cf033be9850797ffa19d93d1b5",
+    "semantic_hash": ""
+  },
+  "src/assets/images/dcs.png": {
+    "mtime": 1784828156.2470887,
+    "seen": 1787791789.6619542,
+    "ast_hash": "2257579a7438becb48fa680d5d837c1d",
+    "semantic_hash": ""
+  },
+  "src/assets/images/hma.png": {
+    "mtime": 1784828156.2495599,
+    "seen": 1787791789.661955,
+    "ast_hash": "e5bddbe733295efd921c78dfece3f2fa",
+    "semantic_hash": ""
+  },
+  "src/assets/images/lebron.jpg": {
+    "mtime": 1784828156.2498271,
+    "seen": 1787791789.661955,
+    "ast_hash": "20cbdc5e6b60cfa3f97d088b624ed29b",
+    "semantic_hash": ""
+  },
+  "src/assets/images/lebron.png": {
+    "mtime": 1784828156.2509668,
+    "seen": 1787791789.661956,
+    "ast_hash": "13e83d5e50c20873286135c68d7f6461",
+    "semantic_hash": ""
+  },
+  "src/assets/images/mlb.png": {
+    "mtime": 1784828156.2543917,
+    "seen": 1787791789.661956,
+    "ast_hash": "98a04ccb77c7adbc89474dfeee1d254f",
+    "semantic_hash": ""
+  },
+  "src/assets/images/nas.png": {
+    "mtime": 1784828156.255963,
+    "seen": 1787791789.661956,
+    "ast_hash": "fe4196c9e573643a5077582ead8c1a30",
+    "semantic_hash": ""
+  },
+  "src/assets/images/poa.png": {
+    "mtime": 1784828156.2566776,
+    "seen": 1787791789.661957,
+    "ast_hash": "f23f2a5354a218fa42faeaf60ba79c90",
+    "semantic_hash": ""
+  },
+  "src/assets/images/zero_to_hero_python.jpg": {
+    "mtime": 1784828156.2603915,
+    "seen": 1787791789.661957,
+    "ast_hash": "8c0491f13dcb808cfe805e153a05ead6",
+    "semantic_hash": ""
+  }
+}
