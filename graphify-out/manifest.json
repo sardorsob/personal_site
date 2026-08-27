@@ -42,9 +42,9 @@
     "semantic_hash": "f6ce00b20dcf31f9d24d815520388a31"
   },
   "src/components/Experience.jsx": {
-    "mtime": 1787791492.146933,
-    "seen": 1787791789.661943,
-    "ast_hash": "85b49375b78aed7bdf23c4c83c0c4c61",
+    "mtime": 1787792343.012374,
+    "seen": 1787792375.590271,
+    "ast_hash": "5ac6745f3ec23da74a31065bde8473cc",
     "semantic_hash": ""
   },
   "src/components/Hero.jsx": {
@@ -105,12 +105,6 @@
     "mtime": 1787791491.9621003,
     "seen": 1787791789.661948,
     "ast_hash": "b3ad7374f769ea494544773103e48b57",
-    "semantic_hash": ""
-  },
-  ".serena/project.yml": {
-    "mtime": 1787790513.6703868,
-    "seen": 1787791789.661949,
-    "ast_hash": "413984225a4fd43615844355c2f2cfbd",
     "semantic_hash": ""
   },
   "AGENTS.md": {

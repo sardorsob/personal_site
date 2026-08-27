@@ -11,9 +11,9 @@ const Experience = () => {
       period: "Sep 2026 - Jun 2027",
       location: "Mount Rainier National Park, Longmire, WA",
       bullets: [
-        "Support Mount Rainier National Park's Imminent Threats Program through an AmeriCorps individual placement administered by Conservation Legacy Stewards Individual Placements.",
-        "Analyze and map river and glacier systems using GIS, remote sensing, LiDAR, NAIP imagery, Sentinel data, Structure-from-Motion products, and field validation to support geohazard assessment and natural-resource management.",
-        "Support Nisqually River seismic arrays, RFID/BLE sediment-tracer research, and hydrologic monitoring while organizing and quality-checking environmental sensor data for statistical analysis, discharge rating curves, maps, and technical summaries."
+        "Support modular seismic arrays along the Nisqually River through sensor deployment, calibration, maintenance, and data QA/QC; analyze fluvial seismic signals to characterize river processes and strengthen geohazard assessments affecting park infrastructure and visitor access.",
+        "Build river and glacier GIS inventories from LiDAR, NAIP, Sentinel, and Structure-from-Motion data using ArcGIS Pro and QGIS; field-validate mapped features and document reproducible spatial datasets for change analysis and natural-resource management.",
+        "Measure sediment transport and streamflow using RFID/BLE smart-rock tracers, pressure and conductivity loggers, dataloggers, telemetry, and field discharge methods; derive transport pathways, sediment-flux metrics, and rating curves to support river and drinking-water monitoring."
       ]
     },
     {
