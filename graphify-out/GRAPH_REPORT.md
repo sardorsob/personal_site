@@ -1,16 +1,16 @@
-# Graph Report - personal_site  (2026-08-26)
+# Graph Report - personal_site  (2026-09-13)
 
 ## Corpus Check
-- 21 files · ~310,061 words
+- 21 files · ~303,002 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 97 nodes · 100 edges · 13 communities (11 shown, 2 thin omitted)
+- 99 nodes · 102 edges · 13 communities (11 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ff13130a`
+- Built from commit: `4bc29c5f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -50,8 +50,8 @@ Cohesion: 0.21
 Nodes (7): App(), Awards(), Contact(), Hero(), Navigation(), PaperView(), root
 
 ### Community 1 - "dependencies"
-Cohesion: 0.13
-Nodes (15): d3, framer-motion, dependencies, d3, framer-motion, react, react-dom, react-refresh (+7 more)
+Cohesion: 0.12
+Nodes (17): d3, framer-motion, dependencies, d3, framer-motion, react, react-dom, react-icons (+9 more)
 
 ### Community 2 - "package.json"
 Cohesion: 0.12
@@ -74,7 +74,7 @@ Cohesion: 0.18
 Nodes (11): 2.1. App Entry (UID: APP-ENTRY), 2.2. App Component (UID: APP-MAIN), 2.3. Navigation (UID: NAV), 2.4. Hero Section (UID: HERO), 2.5. Experience Section (UID: EXP), 2.6.1. ProjectCard (UID: PROJCARD), 2.6. Projects Section (UID: PROJ), 2.7. Certificates/Awards Section (UID: AWARDS) (+3 more)
 
 ## Knowledge Gaps
-- **48 isolated node(s):** `name`, `version`, `start`, `build`, `test` (+43 more)
+- **49 isolated node(s):** `name`, `version`, `start`, `build`, `test` (+44 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -82,14 +82,12 @@ Nodes (11): 2.1. App Entry (UID: APP-ENTRY), 2.2. App Component (UID: APP-MAIN),
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
-  _High betweenness centrality (0.098) - this node is a cross-community bridge._
+  _High betweenness centrality (0.111) - this node is a cross-community bridge._
 - **Why does `browserslist` connect `development` to `package.json`?**
-  _High betweenness centrality (0.060) - this node is a cross-community bridge._
-- **Why does `Project Architecture: Personal Portfolio (React)` connect `Project Architecture: Personal Portfolio (React)` to `2. Component & Data Flow Map`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+  _High betweenness centrality (0.061) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `start` to the rest of the system?**
-  _48 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _49 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

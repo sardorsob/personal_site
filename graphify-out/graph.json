@@ -97,7 +97,7 @@
       "file_type": "code",
       "norm_label": "projectcard()",
       "source_file": "src/components/ProjectCard.jsx",
-      "source_location": "L5"
+      "source_location": "L6"
     },
     {
       "id": "src_components_projects_projects",
@@ -291,6 +291,17 @@
       "source_location": "L25"
     },
     {
+      "id": "package_dependencies_react_icons",
+      "label": "react-icons",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "react-icons",
+      "source_file": "package.json",
+      "source_location": "L26"
+    },
+    {
       "id": "package_dependencies_react_refresh",
       "label": "react-refresh",
       "_origin": "ast",
@@ -299,7 +310,7 @@
       "file_type": "code",
       "norm_label": "react-refresh",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "package_dependencies_react_router_dom",
@@ -310,7 +321,7 @@
       "file_type": "code",
       "norm_label": "react-router-dom",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "package_dependencies_react_scripts",
@@ -321,7 +332,7 @@
       "file_type": "code",
       "norm_label": "react-scripts",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "d3",
@@ -368,6 +379,17 @@
       "source_location": "L25"
     },
     {
+      "id": "react_icons",
+      "label": "react-icons",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "dependencies",
+      "file_type": "concept",
+      "norm_label": "react-icons",
+      "source_file": "package.json",
+      "source_location": "L26"
+    },
+    {
       "id": "react_refresh",
       "label": "react-refresh",
       "_origin": "ast",
@@ -376,7 +398,7 @@
       "file_type": "concept",
       "norm_label": "react-refresh",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "react_router_dom",
@@ -387,7 +409,7 @@
       "file_type": "concept",
       "norm_label": "react-router-dom",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "react_scripts",
@@ -398,7 +420,7 @@
       "file_type": "concept",
       "norm_label": "react-scripts",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "architecture_2_1_app_entry_uid_app_entry",
@@ -764,7 +786,7 @@
       "file_type": "code",
       "norm_label": "browserslist",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "package_browserslist_development",
@@ -775,7 +797,7 @@
       "file_type": "code",
       "norm_label": "development",
       "source_file": "package.json",
-      "source_location": "L36"
+      "source_location": "L37"
     },
     {
       "id": "package_browserslist_production",
@@ -786,7 +808,7 @@
       "file_type": "code",
       "norm_label": "production",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "ref_0_2",
@@ -797,7 +819,7 @@
       "file_type": "concept",
       "norm_label": ">0.2%",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "ref_last_1_chrome_version",
@@ -808,7 +830,7 @@
       "file_type": "concept",
       "norm_label": "last 1 chrome version",
       "source_file": "package.json",
-      "source_location": "L36"
+      "source_location": "L37"
     },
     {
       "id": "ref_last_1_firefox_version",
@@ -819,7 +841,7 @@
       "file_type": "concept",
       "norm_label": "last 1 firefox version",
       "source_file": "package.json",
-      "source_location": "L36"
+      "source_location": "L37"
     },
     {
       "id": "ref_last_1_safari_version",
@@ -830,7 +852,7 @@
       "file_type": "concept",
       "norm_label": "last 1 safari version",
       "source_file": "package.json",
-      "source_location": "L36"
+      "source_location": "L37"
     },
     {
       "id": "ref_not_dead",
@@ -841,7 +863,7 @@
       "file_type": "concept",
       "norm_label": "not dead",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "ref_not_op_mini_all",
@@ -852,7 +874,7 @@
       "file_type": "concept",
       "norm_label": "not op_mini all",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "architecture",
@@ -1118,7 +1140,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -1130,7 +1152,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -1142,7 +1164,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -1154,7 +1176,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -1166,7 +1188,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -1178,7 +1200,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -1230,6 +1252,18 @@
       "weight": 1.0
     },
     {
+      "source": "package_dependencies_react_icons",
+      "target": "react_icons",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
       "source": "package_dependencies_react_refresh",
       "target": "react_refresh",
       "relation": "imports",
@@ -1238,7 +1272,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -1250,7 +1284,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -1262,7 +1296,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -1878,7 +1912,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -1900,7 +1934,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -1911,7 +1945,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -1971,7 +2005,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_refresh",
+      "target": "package_dependencies_react_icons",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1982,7 +2016,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_router_dom",
+      "target": "package_dependencies_react_refresh",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1993,13 +2027,24 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_scripts",
+      "target": "package_dependencies_react_router_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_scripts",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -2175,7 +2220,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ProjectCard.jsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -2244,5 +2289,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ff13130a3b4940614ae21c1615a3ca96d37993aa"
+  "built_at_commit": "4bc29c5f3541e7b3960b94777f27a709172c2cc3"
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaGithub } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const ProjectCard = ({ project }) => {
@@ -41,6 +42,7 @@ const ProjectCard = ({ project }) => {
           )}
           {project.github && (
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+              <FaGithub aria-hidden="true" />
               GitHub
             </a>
           )}

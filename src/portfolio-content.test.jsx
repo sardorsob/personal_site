@@ -48,25 +48,34 @@ test('includes the completed Pacific Climate Evidence Atlas project', () => {
   expect(project).not.toHaveProperty('screenshot');
 });
 
-test('uses concise active project titles and hides retired projects', () => {
-  const visibleTitles = projectsData.projects
-    .filter(({ hidden }) => !hidden)
-    .map(({ title }) => title);
+test('orders active projects and gives each one its GitHub repository', () => {
+  const visibleProjects = projectsData.projects.filter(({ hidden }) => !hidden);
+  const visibleTitles = visibleProjects.map(({ title }) => title);
 
   expect(visibleTitles).toEqual([
-    'Pacific Climate Evidence Atlas',
-    'Uncertain Transit Access',
     'GeoCrop Spatiotemporal Modeling',
     'Wildfire Property Intelligence',
-    'Neural Regime Shift',
-    'Probabilistic Hurricane Track Forecasting'
+    'Probabilistic Hurricane Track Forecasting',
+    'Pacific Climate Evidence Atlas',
+    'Uncertain Transit Access',
+    'Neural Regime Shift'
   ]);
+  expect(Object.fromEntries(
+    visibleProjects.map(({ title, github }) => [title, github])
+  )).toEqual({
+    'GeoCrop Spatiotemporal Modeling': 'https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling',
+    'Wildfire Property Intelligence': 'https://github.com/sardorsob/Wildfire-Property-Intelligence',
+    'Probabilistic Hurricane Track Forecasting': 'https://github.com/sardorsob/Probabilistic-Storm-Tracks',
+    'Pacific Climate Evidence Atlas': 'https://github.com/sardorsob/Pacific-Climate-Gap-Atlas',
+    'Uncertain Transit Access': 'https://github.com/sardorsob/Uncertain-Transit-Access',
+    'Neural Regime Shift': 'https://github.com/sardorsob/Neural-Regime-Shift'
+  });
   expect(projectsData.projects.every(
     (project) => !('screenshot' in project) && !('image' in project)
   )).toBe(true);
 });
 
-test('renders both Pacific project links without an image', () => {
+test('renders the project GitHub link with its icon', () => {
   const project = {
     title: 'Pacific Climate Evidence Atlas',
     description: 'A concise project description.',
@@ -76,10 +85,13 @@ test('renders both Pacific project links without an image', () => {
   };
 
   const page = render(<ProjectCard project={project} />);
+  const githubLink = page.querySelector(`a[href="${project.github}"]`);
 
   expect(page.querySelector('img')).toBeNull();
   expect(page.querySelector(`a[href="${project.link}"]`)).not.toBeNull();
-  expect(page.querySelector(`a[href="${project.github}"]`)).not.toBeNull();
+  expect(githubLink).not.toBeNull();
+  expect(githubLink?.querySelector('svg')).not.toBeNull();
+  expect(githubLink?.textContent).toContain('GitHub');
 });
 
 test('lists the Mount Rainier geohazard data science role', () => {

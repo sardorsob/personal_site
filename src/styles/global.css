@@ -648,6 +648,9 @@ section h2::after {
 
 .project-links a,
 .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   color: #3b82f6;
   text-decoration: none;
   font-weight: 500;
