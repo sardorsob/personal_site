@@ -78,9 +78,9 @@
     "semantic_hash": "a604f777a2e9ffed4d001f9e5abd1df5"
   },
   "src/data/projects.json": {
-    "mtime": 1789354457.4016058,
-    "seen": 1789354803.379364,
-    "ast_hash": "481e71cd1aac86f11344af9840890a96",
+    "mtime": 1790309496.7537189,
+    "seen": 1790309509.770478,
+    "ast_hash": "9c910f002a5a32455a9cde3c8a148464",
     "semantic_hash": ""
   },
   "src/index.js": {
@@ -141,12 +141,6 @@
     "mtime": 1784828156.2152348,
     "seen": 1787791789.661952,
     "ast_hash": "7b03acd1605d4036af9f2a2efd6893fb",
-    "semantic_hash": ""
-  },
-  "public/NAFSI_Predictive_Modeling_for_Agricultural_Resilience.pdf": {
-    "mtime": 1784828156.2302797,
-    "seen": 1787791789.661952,
-    "ast_hash": "129e969aa5bca1f34cff1645be1c13ed",
     "semantic_hash": ""
   },
   "public/Sardor_DS_Resume.pdf": {
@@ -219,6 +213,12 @@
     "mtime": 1784828156.2603915,
     "seen": 1787791789.661957,
     "ast_hash": "8c0491f13dcb808cfe805e153a05ead6",
+    "semantic_hash": ""
+  },
+  "public/Reading_the_Corn_Belt.pdf": {
+    "mtime": 1790309496.6210814,
+    "seen": 1790309509.770483,
+    "ast_hash": "c5724eebc12dcc32ed54d0f47b818227",
     "semantic_hash": ""
   }
 }

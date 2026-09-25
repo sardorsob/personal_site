@@ -6,7 +6,7 @@
       "year": "2026",
       "description": "Built an end-to-end geospatial pipeline analyzing 48M+ pixels across 13 U.S. Corn Belt states using USDA CDL, MODIS NDVI, and NASA SMAP L4 soil moisture. Fit Hilbert Space Gaussian Process (HSGP) models for uncertainty-aware crop phenology curves (RMSE 0.019–0.023). Classified 2.08M pixels into rotation regimes using four sequence metrics and Bayesian Dirichlet-Multinomial posteriors. Detected soil moisture anomalies during the 2019 Midwest Flood and 2022 Plains Drought via a Normal-Inverse-Gamma conjugate framework with Student-t posterior predictives. Trained a LightGBM crop-type classifier on 38 multi-source features achieving 79.2% accuracy across 4 classes, with SHAP-based interpretability and ablation analysis quantifying each data source's marginal contribution.",
       "slug": "geocrop-agricultural-resilience",
-      "pdf": "/NAFSI_Predictive_Modeling_for_Agricultural_Resilience.pdf",
+      "pdf": "/Reading_the_Corn_Belt.pdf",
       "link": "https://geo-crop-spatiotemporal-modeling.vercel.app",
       "github": "https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling",
       "tags": [
