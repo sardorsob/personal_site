@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { act } from 'react';
+import { createRoot } from 'react-dom/client';
+import Projects from './components/Projects';
 import { renderToStaticMarkup } from 'react-dom/server';
 import Experience from './components/Experience';
 import ProjectCard from './components/ProjectCard';
@@ -15,6 +17,7 @@ jest.mock('framer-motion', () => {
   ]);
 
   return {
+    AnimatePresence: ({ children }) => children,
     motion: new Proxy({}, {
       get: (_, tag) => ({ children, ...props }) => {
         const domProps = Object.fromEntries(
@@ -35,9 +38,9 @@ afterEach(() => {
   document.body.innerHTML = '';
 });
 
-test('includes the completed Pacific Climate Evidence Atlas project', () => {
+test('includes the completed Pacific Dataviz Challenge: Water & Energy project', () => {
   const project = projectsData.projects.find(
-    ({ title }) => title === 'Pacific Climate Evidence Atlas'
+    ({ title }) => title === 'Pacific Dataviz Challenge: Water & Energy'
   );
 
   expect(project).toEqual(expect.objectContaining({
@@ -53,22 +56,24 @@ test('orders active projects and gives each one its GitHub repository', () => {
   const visibleTitles = visibleProjects.map(({ title }) => title);
 
   expect(visibleTitles).toEqual([
-    'GeoCrop Spatiotemporal Modeling',
+    'Reading the Corn Belt',
     'Wildfire Property Intelligence',
     'Probabilistic Hurricane Track Forecasting',
-    'Pacific Climate Evidence Atlas',
+    'Pacific Dataviz Challenge: Water & Energy',
     'Uncertain Transit Access',
-    'Neural Regime Shift'
+    'Neural Regime Shift',
+    'Mount Rainier Fluvial Analysis'
   ]);
   expect(Object.fromEntries(
     visibleProjects.map(({ title, github }) => [title, github])
   )).toEqual({
-    'GeoCrop Spatiotemporal Modeling': 'https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling',
+    'Reading the Corn Belt': 'https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling',
     'Wildfire Property Intelligence': 'https://github.com/sardorsob/Wildfire-Property-Intelligence',
     'Probabilistic Hurricane Track Forecasting': 'https://github.com/sardorsob/Probabilistic-Storm-Tracks',
-    'Pacific Climate Evidence Atlas': 'https://github.com/sardorsob/Pacific-Climate-Gap-Atlas',
+    'Pacific Dataviz Challenge: Water & Energy': 'https://github.com/sardorsob/Pacific-Climate-Gap-Atlas',
     'Uncertain Transit Access': 'https://github.com/sardorsob/Uncertain-Transit-Access',
-    'Neural Regime Shift': 'https://github.com/sardorsob/Neural-Regime-Shift'
+    'Neural Regime Shift': 'https://github.com/sardorsob/Neural-Regime-Shift',
+    'Mount Rainier Fluvial Analysis': 'https://github.com/sardorsob/Mora-Fluvial-Analysis'
   });
   expect(projectsData.projects.every(
     (project) => !('screenshot' in project) && !('image' in project)
@@ -77,7 +82,7 @@ test('orders active projects and gives each one its GitHub repository', () => {
 
 test('renders the project GitHub link with its icon', () => {
   const project = {
-    title: 'Pacific Climate Evidence Atlas',
+    title: 'Pacific Dataviz Challenge: Water & Energy',
     description: 'A concise project description.',
     tags: ['Climate Data'],
     link: 'https://pacific-climate-gap-atlas-app.vercel.app/?view=overview',
@@ -109,4 +114,54 @@ test('lists the Mount Rainier geohazard data science role', () => {
   );
   expect(entry?.querySelector('.period')?.textContent).toBe('Sep 2026 - Jun 2027');
   expect(entry?.querySelectorAll('.experience-bullets li')).toHaveLength(3);
+});
+
+
+test('groups visible project cards under their portfolio sections', () => {
+  const page = render(<Projects />);
+  const groups = [...page.querySelectorAll('.project-group')];
+
+  expect(groups.map(group => group.querySelector('h3')?.textContent)).toEqual([
+    'Probabilistic Modeling', 'Maps & Visual Stories', 'Research'
+  ]);
+  expect(groups.map(group => [...group.querySelectorAll('.project-card h4')]
+    .map(heading => heading.textContent))).toEqual([
+    ['Reading the Corn Belt', 'Wildfire Property Intelligence',
+      'Probabilistic Hurricane Track Forecasting', 'Neural Regime Shift'],
+    ['Pacific Dataviz Challenge: Water & Energy', 'Uncertain Transit Access'],
+    ['Mount Rainier Fluvial Analysis']
+  ]);
+  expect(page.textContent).not.toContain('Chronic Kidney Disease Prediction');
+  const research = groups[2];
+  expect(research.querySelector('a')?.href).toBe(
+    'https://github.com/sardorsob/Mora-Fluvial-Analysis'
+  );
+});
+
+test('filters cards across sections and hides sections without matches', () => {
+  global.IS_REACT_ACT_ENVIRONMENT = true;
+  const container = document.createElement('div');
+  document.body.appendChild(container);
+  const root = createRoot(container);
+  try {
+    act(() => root.render(<Projects />));
+    const filter = [...container.querySelectorAll('button')]
+      .find(button => button.textContent === 'Bayesian');
+    act(() => filter.click());
+    expect([...container.querySelectorAll('.project-group > h3')]
+      .map(heading => heading.textContent)).toEqual([
+      'Probabilistic Modeling', 'Maps & Visual Stories'
+    ]);
+    expect(container.textContent).toContain('Uncertain Transit Access');
+    expect(container.textContent).toContain('Reading the Corn Belt');
+    expect(container.textContent).not.toContain('Pacific Dataviz Challenge: Water & Energy');
+    expect(container.textContent).not.toContain('Mount Rainier Fluvial Analysis');
+    const all = [...container.querySelectorAll('button')]
+      .find(button => button.textContent === 'All');
+    act(() => all.click());
+    expect(container.querySelectorAll('.project-card')).toHaveLength(7);
+  } finally {
+    act(() => root.unmount());
+    delete global.IS_REACT_ACT_ENVIRONMENT;
+  }
 });

@@ -109,7 +109,7 @@
       "file_type": "code",
       "norm_label": "projects()",
       "source_file": "src/components/Projects.jsx",
-      "source_location": "L16"
+      "source_location": "L22"
     },
     {
       "id": "src_portfolio_content_test_render",
@@ -121,7 +121,7 @@
       "file_type": "code",
       "norm_label": "render()",
       "source_file": "src/portfolio-content.test.jsx",
-      "source_location": "L29"
+      "source_location": "L32"
     },
     {
       "id": "src_components_blog_blog",
@@ -591,6 +591,61 @@
       "source_location": "L1"
     },
     {
+      "id": "package_scripts",
+      "label": "scripts",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "scripts",
+      "source_file": "package.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "build",
+      "source_file": "package.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "package_scripts_eject",
+      "label": "eject",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "eject",
+      "source_file": "package.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "package_scripts_start",
+      "label": "start",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "start",
+      "source_file": "package.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "package_scripts_test",
+      "label": "test",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "test",
+      "source_file": "package.json",
+      "source_location": "L7"
+    },
+    {
       "id": "package",
       "label": "package.json",
       "_origin": "ast",
@@ -710,61 +765,6 @@
       "norm_label": "url",
       "source_file": "package.json",
       "source_location": "L12"
-    },
-    {
-      "id": "package_scripts",
-      "label": "scripts",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "scripts",
-      "source_file": "package.json",
-      "source_location": "L4"
-    },
-    {
-      "id": "package_scripts_build",
-      "label": "build",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "build",
-      "source_file": "package.json",
-      "source_location": "L6"
-    },
-    {
-      "id": "package_scripts_eject",
-      "label": "eject",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "eject",
-      "source_file": "package.json",
-      "source_location": "L8"
-    },
-    {
-      "id": "package_scripts_start",
-      "label": "start",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "start",
-      "source_file": "package.json",
-      "source_location": "L5"
-    },
-    {
-      "id": "package_scripts_test",
-      "label": "test",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "test",
-      "source_file": "package.json",
-      "source_location": "L7"
     },
     {
       "id": "package_version",
@@ -1051,6 +1051,17 @@
       "norm_label": "filtercategories",
       "source_file": "src/components/Projects.jsx",
       "source_location": "L6"
+    },
+    {
+      "id": "src_components_projects_projectsections",
+      "label": "projectSections",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Projects.jsx",
+      "file_type": "code",
+      "norm_label": "projectsections",
+      "source_file": "src/components/Projects.jsx",
+      "source_location": "L16"
     },
     {
       "id": "src_portfolio_content_test",
@@ -1409,7 +1420,7 @@
     },
     {
       "source": "src_portfolio_content_test",
-      "target": "src_components_experience_experience",
+      "target": "src_components_projects_projects",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1421,6 +1432,18 @@
     },
     {
       "source": "src_portfolio_content_test",
+      "target": "src_components_experience_experience",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/portfolio-content.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_portfolio_content_test",
       "target": "src_components_projectcard_projectcard",
       "relation": "imports",
       "_origin": "ast",
@@ -1428,7 +1451,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/portfolio-content.test.jsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -1541,7 +1564,7 @@
     },
     {
       "source": "src_portfolio_content_test",
-      "target": "src_components_experience",
+      "target": "src_components_projects",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1553,6 +1576,18 @@
     },
     {
       "source": "src_portfolio_content_test",
+      "target": "src_components_experience",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/portfolio-content.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_portfolio_content_test",
       "target": "src_components_projectcard",
       "relation": "imports_from",
       "_origin": "ast",
@@ -1560,7 +1595,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/portfolio-content.test.jsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -2225,13 +2260,24 @@
     },
     {
       "source": "src_components_projects",
-      "target": "src_components_projects_projects",
+      "target": "src_components_projects_projectsections",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/Projects.jsx",
       "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_projects",
+      "target": "src_components_projects_projects",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Projects.jsx",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -2264,7 +2310,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/portfolio-content.test.jsx",
-      "source_location": "L29",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -2289,5 +2335,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4bc29c5f3541e7b3960b94777f27a709172c2cc3"
+  "built_at_commit": "6be3a5a70448a73a1106a130c36d57f6c81f4cc6"
 }

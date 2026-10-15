@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 import projectsData from '../data/projects.json';
@@ -13,13 +13,15 @@ const filterCategories = [
   { label: 'Machine Learning', match: 'machine learning' },
 ];
 
-const Projects = () => {
-  const [projects, setProjects] = useState([]);
-  const [selectedFilter, setSelectedFilter] = useState(null);
+const projectSections = [
+  { id: 'modeling', title: 'Probabilistic Modeling' },
+  { id: 'maps', title: 'Maps & Visual Stories' },
+  { id: 'research', title: 'Research' },
+];
 
-  useEffect(() => {
-    setProjects(projectsData.projects.filter(p => !p.hidden));
-  }, []);
+const Projects = () => {
+  const [selectedFilter, setSelectedFilter] = useState(null);
+  const projects = projectsData.projects.filter(p => !p.hidden);
 
   const filteredProjects = selectedFilter
     ? projects.filter(p => p.tags.some(t => t.toLowerCase().includes(selectedFilter)))
@@ -54,22 +56,32 @@ const Projects = () => {
         ))}
       </motion.div>
 
-      <div className="projects-grid">
-        <AnimatePresence mode="popLayout">
-          {filteredProjects.map((project) => (
-            <motion.div
-              key={project.title}
-              layout
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.35 }}
-            >
-              <ProjectCard project={project} />
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </div>
+      {projectSections.map(({ id, title }) => {
+        const sectionProjects = filteredProjects.filter(project => project.section === id);
+        if (!sectionProjects.length) return null;
+
+        return (
+          <section key={id} className="project-group" aria-labelledby={`projects-${id}`}>
+            <h3 id={`projects-${id}`}>{title}</h3>
+            <div className="projects-grid">
+              <AnimatePresence mode="popLayout">
+                {sectionProjects.map((project) => (
+                  <motion.div
+                    key={project.title}
+                    layout
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.35 }}
+                  >
+                    <ProjectCard project={project} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </div>
+          </section>
+        );
+      })}
     </section>
   );
 };

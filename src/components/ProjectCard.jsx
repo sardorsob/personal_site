@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
         </div>
       )}
       <div className="project-content">
-        <h3>{project.title}</h3>
+        <h4>{project.title}</h4>
         <p>{project.description}</p>
         <div className="project-tech">
           {project.tags.map((tag, index) => (
