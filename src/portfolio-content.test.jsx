@@ -99,6 +99,37 @@ test('renders the project GitHub link with its icon', () => {
   expect(githubLink?.textContent).toContain('GitHub');
 });
 
+test('keeps project summaries compact with full details and real paper links available', () => {
+  const project = {
+    title: 'A modeling project',
+    summary: 'A brief overview.',
+    description: 'The complete methodology and results.',
+    tags: ['Python', 'Bayesian', 'Spatial', 'Remote Sensing'],
+    slug: 'modeling-project',
+    pdf: '/modeling-project.pdf',
+    github: 'https://github.com/example/modeling'
+  };
+  const page = render(<ProjectCard project={project} />);
+
+  expect(page.querySelector('.project-summary')?.textContent).toBe(project.summary);
+  expect(page.querySelectorAll('.project-preview-tags .tech-tag')).toHaveLength(3);
+  expect(page.querySelector('details')?.hasAttribute('open')).toBe(false);
+  expect(page.querySelector('details p')?.textContent).toBe(project.description);
+  expect(page.querySelector('details')?.textContent).toContain('Remote Sensing');
+  expect(page.querySelector('a[href="/papers/modeling-project"]')).not.toBeNull();
+});
+
+test('presents Mora as a single research repository box', () => {
+  const page = render(<Projects />);
+  const research = page.querySelector('[aria-labelledby="projects-research"]');
+  expect(research.querySelectorAll('.project-card')).toHaveLength(1);
+  expect(research.querySelector('h4')?.textContent).toBe('Mount Rainier Fluvial Analysis');
+  expect(research.querySelectorAll('a')).toHaveLength(1);
+  expect(research.querySelector('a')?.href).toBe('https://github.com/sardorsob/Mora-Fluvial-Analysis');
+  expect(research.querySelector('details')).toBeNull();
+  expect(research.querySelector('.project-summary')?.textContent).toContain('Mount Rainier');
+});
+
 test('lists the Mount Rainier geohazard data science role', () => {
   const page = render(<Experience />);
   const heading = [...page.querySelectorAll('h3')].find(

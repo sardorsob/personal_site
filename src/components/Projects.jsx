@@ -61,7 +61,7 @@ const Projects = () => {
         if (!sectionProjects.length) return null;
 
         return (
-          <section key={id} className="project-group" aria-labelledby={`projects-${id}`}>
+          <section key={id} className={`project-group project-group--${id}`} aria-labelledby={`projects-${id}`}>
             <h3 id={`projects-${id}`}>{title}</h3>
             <div className="projects-grid">
               <AnimatePresence mode="popLayout">

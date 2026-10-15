@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaFileAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const ProjectCard = ({ project }) => {
   const navigate = useNavigate();
+  const isResearch = project.section === 'research';
 
   return (
     <motion.div
-      className="project-card"
-      whileHover={{ y: -6, boxShadow: '0 20px 40px rgba(59,130,246,0.2)' }}
+      className={`project-card${isResearch ? ' project-card--repository' : ''}`}
+      whileHover={{ y: -3 }}
       transition={{ duration: 0.2 }}
     >
       {project.screenshot && (
@@ -22,22 +23,48 @@ const ProjectCard = ({ project }) => {
         </div>
       )}
       <div className="project-content">
-        <h4>{project.title}</h4>
-        <p>{project.description}</p>
-        <div className="project-tech">
-          {project.tags.map((tag, index) => (
-            <span key={index} className="tech-tag">{tag}</span>
-          ))}
+        <div className="project-card-meta">
+          <span>{isResearch ? 'Research repository' : project.year}</span>
+          {isResearch && <FaGithub aria-hidden="true" />}
         </div>
+        <h4>{project.title}</h4>
+        <p className="project-summary">{project.summary || project.description}</p>
+        {!isResearch && (
+          <>
+            <div className="project-tech project-preview-tags">
+              {project.tags.slice(0, 3).map((tag) => (
+                <span key={tag} className="tech-tag">{tag}</span>
+              ))}
+            </div>
+            {project.summary && (
+              <details className="project-details">
+                <summary>More details</summary>
+                <p>{project.description}</p>
+                {project.tags.length > 3 && (
+                  <div className="project-tech">
+                    {project.tags.slice(3).map((tag) => (
+                      <span key={tag} className="tech-tag">{tag}</span>
+                    ))}
+                  </div>
+                )}
+              </details>
+            )}
+          </>
+        )}
         <div className="project-links">
           {project.pdf && project.slug && (
-            <a onClick={() => navigate(`/papers/${project.slug}`)} className="project-link">
-              📄 View Paper
+            <a href={`/papers/${project.slug}`} onClick={(event) => {
+              if (event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
+                event.preventDefault();
+                navigate(`/papers/${project.slug}`);
+              }
+            }} className="project-link">
+              <FaFileAlt aria-hidden="true" /> Paper
             </a>
           )}
           {project.link && (
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-              🌐 Visit Site
+              <FaExternalLinkAlt aria-hidden="true" /> Visit Site
             </a>
           )}
           {project.github && (
