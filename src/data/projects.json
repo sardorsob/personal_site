@@ -10,7 +10,7 @@
       "slug": "geocrop-agricultural-resilience",
       "pdf": "/Reading_the_Corn_Belt.pdf",
       "link": "https://nafsi2026-corn-belt-modeling.vercel.app",
-      "github": "https://github.com/sardorsob/GeoCrop-Spatiotemporal-Modeling",
+      "github": "https://github.com/sardorsob/Nafsi-Corn-Belt-Modeling",
       "tags": [
         "Geospatial Data Science",
         "Bayesian Methods",
@@ -61,7 +61,7 @@
       "year": "2026",
       "description": "An interactive climate-evidence atlas comparing changes in drinking-water access and renewable-energy share across 22 Pacific places. The project also audits where official records are present or absent, allowing readers to inspect each comparison, its sources, and its limitations.",
       "link": "https://pacific-climate-gap-atlas-app.vercel.app/?view=overview",
-      "github": "https://github.com/sardorsob/Pacific-Climate-Gap-Atlas",
+      "github": "https://github.com/sardorsob/Pacific-Resource-Map",
       "tags": [
         "Climate Data",
         "Geospatial Analysis",
@@ -72,6 +72,15 @@
         "Python",
         "Statistical Analysis"
       ]
+    },
+    {
+      "title": "PacificVis 2027: Tsunami Timing",
+      "summary": "In development: visual analytics and storytelling about why tsunami arrival times differ across the Pacific, using historical observations and modeled travel times.",
+      "section": "maps",
+      "year": "2026",
+      "description": "An ongoing PacificVis 2027 project with separate conference-paper and visual-storytelling tracks. The shared data foundation brings together USGS earthquake metadata, NOAA travel-time contours, DART records, and coastal water-level observations. Current exploratory work uses the 2011 Tōhoku tsunami as a provisional case to examine observation coverage and modeled-versus-observed timing. The planned browser story explores why distance alone does not explain arrival time. Data validation and arrival comparisons are still in progress.",
+      "github": "https://github.com/sardorsob/PacificVis-Tsunami-Warning",
+      "tags": ["Data Visualization", "Geospatial Analysis", "Tsunami Travel Times", "Python", "Time Series", "Uncertainty"]
     },
     {
       "title": "Uncertain Transit Access",
@@ -114,13 +123,13 @@
       ]
     },
     {
-      "title": "Mount Rainier Fluvial Analysis",
-      "summary": "Salt-dilution discharge and fluvial-seismology research workflows for Mount Rainier, with documented provenance and validation.",
+      "title": "Mount Rainier Fluvial Seismology",
+      "summary": "Ongoing Mount Rainier research on river-generated ground vibrations, with salt-dilution gauging and seismic field experiments supporting the study of flow and sediment transport.",
       "section": "research",
       "year": "2026",
-      "description": "Organized existing salt-dilution discharge and fluvial-seismology research code into a self-contained Mount Rainier project. Preserved scientific calculations while standardizing notebooks, imports, input paths, and saved results. Includes waveform preparation, instrument calibration, spectral analysis, and Python/R modeling workflows, with provenance and validation notes documenting exploratory and incomplete work.",
+      "description": "Supports ongoing research into how turbulent river flow and moving sediment generate measurable ground vibrations at Mount Rainier. Salt-dilution gauging provides an independent path to estimating water discharge, while seismic waveforms and spectra support comparisons with hydraulic-turbulence and bedload-impact models. Work includes conductivity-data ingestion, calibration and field metadata, seismic-node fieldwork, controlled-source experiments, and reproducible Python/R analysis. The broader goal is to relate hydrologic measurements to seismic interpretations; paired model validation and accepted scientific results remain in progress.",
       "github": "https://github.com/sardorsob/Mora-Fluvial-Analysis",
-      "tags": ["Fluvial Seismology", "Streamflow", "Signal Processing", "Python", "R", "Research Workflows"]
+      "tags": ["Fluvial Seismology", "Sediment Transport", "Salt-Dilution Gauging", "Signal Processing", "Python", "R", "Field Research"]
     },
     {
       "hidden": true,
